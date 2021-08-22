@@ -14,13 +14,36 @@
   },
   "flex-layout.row#footer": { 
     "children": [
-      "image"
+      "login",
+      "rich-text#1",
+      "rich-text#2",
+      "rich-text#3"
     ]
   },
-  "image": {
-    "props": {
-      "width": 100,
-      "src": "https://brand.vtex.com/static/media/VTEX_pink_RGB.751a9fb5.svg"
+    "rich-text#1": {
+      "props": {
+        "text": "Desafios",
+        "textAlignment": "CENTER",
+        "textColor": "c-on-base",
+        "textPosition": "LEFT"
+      }
+    },
+    "rich-text#2": {
+      "props": {
+        "text": "Desafios2",
+        "textAlignment": "CENTER",
+        "textColor": "c-on-base",
+        "textPosition": "LEFT"
+      }
+    },
+    "rich-text#3": {
+      "props": {
+        "blockClass": ["3"],
+        "font": "t-body",
+        "text": "Desafios3",
+        "textAlignment": "CENTER",
+        "textColor": "c-on-base",
+        "textPosition": "LEFT"
+      }
     }
   }
-}

@@ -1,15 +1,82 @@
 {
   "store.home": { 
     "blocks": [
-      "rich-text"
+      "flex-layout.row#home",
+      "search-result-layout.customQuery#home"
     ]
   },
-  "rich-text": { 
-    "props": { 
-      "text": "VTEX Store Framework",
-      "textAlignment": "CENTER",
-      "textPosition": "CENTER",
-      "font": "t-heading-1"
+  "flex-layout.row#home": {
+    "children": [
+      "slider-layout#home"
+    ],
+    "props": {
+      "paddingBottom": "5"
     }
-  }
+  },
+  "search-result-layout.customQuery#home": {
+    "props": {
+      "querySchema": {
+        "skusFilter": "FIRST_AVAILABLE",
+        "simulationBehavior": "skip",
+        "maxItemsPerPage": 8
+      }
+    },
+    "blocks": ["search-result-layout.desktop#home", "search-result-layout.mobile"]
+  },
+  "search-result-layout.desktop#home": {
+    "children": [
+      "flex-layout.row#result"
+    ],
+    "props": {
+      "preventRouteChange": true
+    }
+  },
+  "flex-layout.row#result": {
+    "children":[
+      "search-content#search"
+    ]  
+  },
+  "search-content#search" : {
+    "blocks": [
+      "gallery", "not-found"
+    ]
+  },
+  // "gallery#lp": {
+  //   "props": {
+  //     "layouts": [
+  //     {
+  //       "name": "grid",
+  //       "component": "GridSummary",
+  //       "ItemsPerRow": {
+  //         "(min-width:1300px)": 4,
+  //         "desktop": 3,
+  //         "tablet": 3,
+  //         "phone": 2
+  //       }
+  //     },
+  //     {
+  //     "name":"List",
+  //     "component":"ListSummary",
+  //     "ItemsPerRow":{
+  //       "(min-width:1300px)": 4,
+  //         "desktop": 3,
+  //         "tablet": 3,
+  //         "phone": 2
+  //       }
+  //     }
+  //   ],
+  //   "ListSummary": "product-summary.shelf",
+  //   "GridSummary": "product-summary.shelf"
+  //   }
+  // },
+  "product-summary.shelf": {
+    "children": [
+      "product-summary-name",
+      "product-summary-image"
+    ]
+  } 
 }
+
+ 
+
+

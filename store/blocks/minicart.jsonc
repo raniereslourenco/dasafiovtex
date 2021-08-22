@@ -1,0 +1,19 @@
+{
+    "minicart-product-list#example": {
+      "blocks": ["product-list"]
+    },
+  
+    "add-to-cart-button": {
+      "props": {
+        "addToCartFeedback": "customEvent",
+        "customPixelEventId": "add-to-cart-button"
+      }
+    },
+  
+    "minicart.v2": {
+      "props": {
+        "customPixelEventId": "add-to-cart-button"
+      },
+      "children": ["minicart-base-content"]
+    }
+  }

@@ -1,0 +1,34 @@
+.sliderArrows {
+    bottom: 0;
+}
+
+.paginationDot--isActive {
+    background-color: #00bf32;
+    
+}
+
+.slideChildrenContainer--home {
+    /* max-width: 200px; */
+    max-height: 100%;
+    margin-bottom: 2.5rem;
+
+}
+
+.caretIcon--home {
+    color: aliceblue;
+    /* positio n: absolute; */
+}
+
+.paginationDotsContainer--home {
+    height: 32px;
+    align-items: center;
+    margin-top: 4.5rem;
+}
+
+.sliderLeftArrow {
+    margin-left: 8.3rem;
+}
+
+.sliderRightArrow {
+    margin-right: 8.3rem;
+}

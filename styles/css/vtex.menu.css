@@ -1,0 +1,18 @@
+.container {
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+/* .styledLinkContent {
+    color: white;
+} */
+
+.menuItem--isOpen {
+    border-bottom: #00bf32;
+}
+
+.styledLinkContent {
+    color: #00bf32;
+    font-weight: bold;
+}

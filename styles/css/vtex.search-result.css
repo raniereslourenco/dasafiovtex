@@ -1,0 +1,17 @@
+.gallery {
+    align-content: center;
+    justify-content: space-evenly;
+    margin-bottom: 3rem;
+    padding: 0;
+}
+
+.galleryItem--normal {
+    margin: 2rem;
+    background-color: #303030;
+    border-radius: .6rem;
+    border-color: #00bf32;
+}
+
+.galleryItem {
+    border-color: #00bf32;
+}

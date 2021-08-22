@@ -1,0 +1,29 @@
+{
+    "slider-layout#home": {
+    "children": ["image#teste1", "image#teste2"],
+    "props": {
+     "autoplay": {
+         "timeout": 3000,
+         "stopOnHover": true
+       },
+      "itemsPerPage": {
+          "desktop": "1"
+      },
+      "infinite":false,
+      "blockClass":"home"
+    }
+  },
+  "image#teste1": {
+      "props": {
+          "src": "assets/BANNER-WOOD.png",
+          "maxHeight": 600
+
+      }
+  },
+  "image#teste2": {
+    "props": {
+        "src": "assets/guerreiro.png",
+        "maxHeight": 600
+        }
+    }
+}

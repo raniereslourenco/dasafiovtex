@@ -14,7 +14,7 @@
     "props": {
       "blockClass": "sticky-header"
     },
-    "children": ["flex-layout.row#desktop"]
+    "children": ["flex-layout.row#desktop","flex-layout.row#desk"]
   },
   "flex-layout.row#desktop": {
     "props": {
@@ -28,9 +28,23 @@
       "flex-layout.col#logo-desktop",
       "flex-layout.col#spacer",
       "search-bar",
-      "locale-switcher",
-      "login",
-      "minicart.v2"
+      "flex-layout.col#spacer",
+      // "locale-switcher",
+      // "login",
+      "minicart.v2",
+      "flex-layout.col#spacer"
+    ]
+  },
+  "flex-layout.row#desk": {
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true
+    },
+    "children": [
+      "vtex.menu@2.x:menu#upmedal" //menu superior
     ]
   },
   "flex-layout.col#spacer": {
@@ -48,8 +62,144 @@
     "props": {
       "title": "Logo",
       "href": "/",
-      "url": "https://brand.vtex.com/static/media/VTEX_pink_RGB.751a9fb5.svg",
-      "width": "80"
+      "url": "https://maratonavirtual.s3.sa-east-1.amazonaws.com/upmedal.png",
+      "width": "150"
+    }
+  },
+  "vtex.menu@2.x:menu#upmedal": {
+    "props": {
+      "items": [
+        {
+          "id": "menu-item-promo",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/promocao",
+            "noFollow": false,
+            "tagTitle": "promocao",
+            "text": "PROMOÇÃO"
+          }
+        },
+        {
+          "id": "menu-item-corinthians",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "corinthians",
+            "text": "CORINTHIANS"
+          }
+        },
+        {
+          "id": "menu-item-palmeiras",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "palmeiras",
+            "text": "PALMEIRAS"
+          }
+        },
+        {
+          "id": "menu-item-signo",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "signo",
+            "text": "SIGNOS"
+          }
+        },
+        {
+          "id": "menu-item-divertido",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "divertido",
+            "text": "DIVERTIDOS"
+          }
+        },
+        {
+          "id": "menu-item-maratona",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "maratona",
+            "text": "7 MARATONAS"
+          }
+        },
+        {
+          "id": "menu-item-guerreiro",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "guerreiro",
+            "text": "GUERREIROS"
+          }
+        },
+        {
+          "id": "menu-item-album1",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "album1",
+            "text": "ALBUM1"
+          }
+        },
+        {
+          "id": "menu-item-album2",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "album2",
+            "text": "ALBUM2"
+          }
+        },
+        {
+          "id": "menu-item-album3",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "album3",
+            "text": "ALBUM3"
+          }
+        }
+      ]
     }
   },
   "header-layout.mobile": {

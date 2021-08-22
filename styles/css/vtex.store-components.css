@@ -1,0 +1,28 @@
+.imageElement {
+    border-radius: 1rem;
+    margin-bottom: 1rem 0 3rem 0;
+}
+
+.searchBarContainer {
+    width: 40rem;
+    background-color: #303030;
+    border-color: transparent;
+}
+
+.searchBarContainer :global(.vtex-input-prefix__group) {
+    border: none;
+    border-bottom: thin solid #fff;
+
+}
+
+.searchBarInnerContainer {
+    border: none;
+}
+
+.searchIcon {
+    color: #00bf32;
+}
+
+.container{
+    max-width: 60rem;
+}
